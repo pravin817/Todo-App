@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const AddNote = ({ handleAddNote }) => {
   const [noteText, setNoteText] = useState("");
 
-  const characterLimit = 200;
+  // const characterLimit = 200;
   const handleChange = (e) => {
     if (characterLimit - e.target.value.length >= 0) {
       setNoteText(e.target.value);
